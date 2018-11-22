@@ -34,7 +34,7 @@ import NotificationPopup from './notifications/NotificationPopup';
 import Topnav from './components/Navigation/Topnav';
 import Transfer from './wallet/Transfer';
 import PowerUpOrDown from './wallet/PowerUpOrDown';
-import BBackTop from './components/BBackTop';
+// import BBackTop from './components/BBackTop';
 
 @withRouter
 @connect(
@@ -239,7 +239,7 @@ export default class Wrapper extends React.PureComponent {
               <Transfer />
               <PowerUpOrDown />
               <NotificationPopup />
-              <BBackTop className="primary-modal" />
+              {/* <BBackTop className="primary-modal" /> */}
             </div>
           </Layout>
         </LocaleProvider>
