@@ -27,8 +27,8 @@
     "eslint-autofix": "eslint --fix \"src/**/*.js\"",
     "heroku-prebuild": "npm i -g pm2 && pm2 install pm2-logrotate",
     "heroku-postbuild": "npm run build",
-    "push": "git add . ; git commit -m 'ready' ; git push origin benDev",
-    "pull": "git pull origin benDev"
+    "push": "git add . ; git commit -m 'ready' ; git push origin devBen",
+    "pull": "git pull origin devBen"
   },
   "husky": {
     "hooks": {}
