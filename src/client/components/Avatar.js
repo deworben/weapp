@@ -79,8 +79,9 @@ class Avatar extends React.Component {
 
   render(){
 		let { username, size } = this.props;
-		let { profilePicture } = this.state
+		let { profilePicture } = this.state;
 		// let json = JSON.parse()
+		
 		let style = {
 			minWidth: `${size}px`,
 			width: `${size}px`,

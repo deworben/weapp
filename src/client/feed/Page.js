@@ -92,7 +92,7 @@ class Page extends React.Component {
                   onSortChange={this.handleSortChange}
                   onTopicClose={this.handleTopicClose}
                 />
-              {authenticated && <QuickPostEditor />}
+              {authenticated && <QuickPostEditor/>}
               <SubFeed />
 							{/* <UserWallet isCurrentUser className="userWalletPage"></UserWallet> */}
             </div>

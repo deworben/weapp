@@ -74,7 +74,7 @@ class QuickPostEditor extends React.Component {
       this.input.setSelectionRange(pos, pos);
     }
   };
-
+  
   getQuickPostData = () => {
     const currentPaths = this.props.location.pathname.split('/');
     const nativeTag = 'weyoume';
@@ -266,7 +266,9 @@ class QuickPostEditor extends React.Component {
             <Avatar username={user.name} size={40} />
           </div>
           <div className="QuickPostEditor__dropzone-base">
-            <Dropzone
+
+
+          <Dropzone
               disableClick
               style={{ flex: 1 }}
               accept="image/*"
@@ -276,7 +278,8 @@ class QuickPostEditor extends React.Component {
               onDragEnter={this.handleDragEnter}
               onDragLeave={this.handleDragLeave}
             >
-              {this.state.dropzoneActive && (
+            
+            {this.state.dropzoneActive && (
                 <div className="QuickPostEditor__dropzone">
                   <div>
                     <i className="iconfont icon-picture" />
@@ -284,8 +287,10 @@ class QuickPostEditor extends React.Component {
                   </div>
                 </div>
               )}
+              
               <Input.TextArea
                 autosize={{ minRows: inputMinRows, maxRows: 12 }}
+                imageUploading={imageUploading}
                 onChange={this.handleUpdateCurrentInputValue}
                 onFocus={this.handleFocusInput}
                 onBlur={this.handleUnfocusInput}
@@ -297,12 +302,16 @@ class QuickPostEditor extends React.Component {
                 value={this.state.currentInputValue}
                 maxLength="255"
               />
+
             </Dropzone>
+
+
+
           </div>
         </div>
-        {focusedInput && (
+        {(
           <QuickPostEditorFooter
-            imageUploading={imageUploading}
+            
             postCreationLoading={postCreationLoading}
             handleCreatePost={this.handleCreatePost}
             handleImageChange={this.handleImageChange}

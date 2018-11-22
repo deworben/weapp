@@ -16,7 +16,7 @@ const Navigation = ({ authenticatedUser, trendingTopicsLoading, trendingTopics }
     {/* <Topics loading={trendingTopicsLoading} topics={trendingTopics} /> */}
   </div>
 );
-
+//test
 Navigation.propTypes = {
   authenticatedUser: PropTypes.shape().isRequired,
   trendingTopicsLoading: PropTypes.bool.isRequired,
