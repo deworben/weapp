@@ -472,6 +472,9 @@ export default class Buttons extends React.Component {
 						{post.children > 0 && <FormattedNumber value={post.children} />}
 					</span>
 				</div>
+
+
+
 				{showReblogLink && (
 					<div className="button__group">
 						<BTooltip

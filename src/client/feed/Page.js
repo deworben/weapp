@@ -63,8 +63,7 @@ class Page extends React.Component {
           <title>WeYouMe</title>
           <meta name="robots" content={robots} />
         </Helmet>
-        <ScrollToTop />
-        <ScrollToTopOnMount />
+       
 				{/* <HeroBannerContainer /> */}
 				
         <div className="shifted">

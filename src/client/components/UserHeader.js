@@ -68,10 +68,10 @@ const UserHeader = ({
 									'UserHeader__user__button-follows-you': isFollowing && !isSameUser,
 								})}
 							>
-								<Action className="send-money" onClick={onTransferClick}>
-									<FormattedMessage id="send" defaultMessage="Send" />
-									<img src="/images/dollar.png" className="send-dollar on-right"/>
-								</Action>
+				  	  <Action className="send-money" onClick={onTransferClick}>
+						   <FormattedMessage id="send" defaultMessage="Send" />
+								<img src="/images/dollar.png" className="send-dollar on-right"/>
+              </Action> 
 							</div>
 						)}
 					</div>

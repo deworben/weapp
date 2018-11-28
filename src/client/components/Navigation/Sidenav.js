@@ -6,6 +6,11 @@ import './Sidenav.less';
 
 const isTrending = (match, location) => location.pathname.match(/trending/);
 const isNew = (match, location) => location.pathname.match(/created/);
+
+
+const isVids = (match, location) => location.pathname.match(/vids/);
+
+
 const isWallet = (match, location) => location.pathname.match(/wallet/);
 const isHot = (match, location) => location.pathname.match(/hot/);
 const isReplies = (match, location) => location.pathname.match(/replies/);
@@ -30,6 +35,14 @@ const Sidenav = ({ username }) =>
 				<FormattedMessage id="new" defaultMessage="New" />
 			</NavLink>
 		</li>
+
+		<li>
+			<NavLink to="/vids" activeClassName="Sidenav__item--active" isActive={isVids}>
+				<i className="iconfont icon-video" />
+				<FormattedMessage id="vids" defaultMessage="Videos" />
+			</NavLink>
+		</li>
+
 		{/* <li>
 			<NavLink to="/active" activeClassName="Sidenav__item--active" isActive={isTrending}>
 			<i className="iconfont icon-emoji_fill" />

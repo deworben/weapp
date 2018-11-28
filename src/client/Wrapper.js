@@ -34,7 +34,7 @@ import NotificationPopup from './notifications/NotificationPopup';
 import Topnav from './components/Navigation/Topnav';
 import Transfer from './wallet/Transfer';
 import PowerUpOrDown from './wallet/PowerUpOrDown';
-// import BBackTop from './components/BBackTop';
+import BBackTop from './components/BBackTop';
 
 @withRouter
 @connect(
