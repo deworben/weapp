@@ -2,12 +2,18 @@
 @import (reference) '../../styles/modules/variables.less';
 
 .Story {
-  background-color: @story-bg-color;
+  background-color: @white;
   color: #353535;
-	border: @base-border;
+  // border: @base-border;
+  border: @border-width-base @border-style-base @border-color-base;
+
+  border-left: 0.01px @border-style-base @border-color-base;
+  border-bottom: 0px @border-style-base @border-color-base;
+
   @media @small {
-    border-radius: 4px;
-    border: @base-border;
+    // border-radius: 4px; <- makes the corners straight
+    order: @base-border;
+
   }
 
   &__content {
@@ -31,7 +37,7 @@
   }
 
   &:not(:first-child) {
-    margin-top: 12px;
+    // margin-top: 12px;
   }
 
   &:last-child {

@@ -4,26 +4,28 @@
   position: relative;
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
-
+  justify-content: center;
+  background: white;
+  
   @media @small {
     padding: 0;
   }
-
+  
   @media @large {
     padding: 0;
   }
-
+  
   &:after {
     content: '';
     display: table;
     clear: both;
   }
-
+  
   .left {
-		width: @left-width;
+    width: @left-width;
 		padding-left: @padding;
-		padding-right: @padding;
+    padding-right: @padding;
+  
   }
 
   .right {
