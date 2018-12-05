@@ -46,6 +46,10 @@ class Page extends React.Component {
     }
   };
 
+  movee = () =>{
+    window.scrollTo(0, 0);
+  }
+
   handleTopicClose = () => this.props.history.push('/trending');
 
   render() {
@@ -63,13 +67,13 @@ class Page extends React.Component {
           <title>WeYouMe</title>
           <meta name="robots" content={robots} />
         </Helmet>
-       
 				{/* <HeroBannerContainer /> */}
 				
         <div className="shifted">
           <div className="feed-layout container">
             <Affix className="leftContainer" stickPosition={77}>
               <div className="left">
+                {/* <button className="left" onClick={this.movee()}>penis</button> */}
                 <LeftSidebar />
               </div>
             </Affix>
@@ -83,7 +87,7 @@ class Page extends React.Component {
 								onSortChange={this.handleSortChange}
 								onTopicClose={this.handleTopicClose}
                 />
-							)} */}
+              )} */}       
 							<TopicSelector
                   isSingle={false}
                   sort={sortBy}
@@ -98,7 +102,7 @@ class Page extends React.Component {
 						<Affix className="rightContainer" stickPosition={77}>
 							<div className="right">
 								<RightSidebar />
-							</div>
+              </div>
 						</Affix>
           </div>
         </div>
