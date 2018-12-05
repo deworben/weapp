@@ -73,7 +73,8 @@ class Page extends React.Component {
           <div className="feed-layout container">
             <Affix className="leftContainer" stickPosition={77}>
               <div className="left">
-                {/* <button className="left" onClick={this.movee()}>penis</button> */}
+              
+                {/* <button className="left" onClick={this.movee()}>testButton</button> */}
                 <LeftSidebar />
               </div>
             </Affix>
@@ -101,7 +102,20 @@ class Page extends React.Component {
             </div>
 						<Affix className="rightContainer" stickPosition={77}>
 							<div className="right">
-								<RightSidebar />
+
+
+              {/* <button className="main-panel" onClick={this.movee()}><i class="iconfont icon-picture"></i>peeenis</button> */}
+              {/* <BTooltip
+              placement="bottom"
+              title={intl.formatMessage({ id: 'write_post', defaultMessage: 'Write post' })}
+              mouseEnterDelay={1}
+            >
+              <Link to="/editor" className="Topnav__link Topnav__link--action">
+                <i className="iconfont icon-write" />
+              </Link>
+              </BTooltip>
+
+								<RightSidebar /> */}
               </div>
 						</Affix>
           </div>

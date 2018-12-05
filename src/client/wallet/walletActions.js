@@ -29,7 +29,7 @@ export const ADD_MORE_ACTIONS_TO_CURRENT_DISPLAYED_ACTIONS =
 export const UPDATE_FILTERED_ACTIONS = '@users/UPDATE_FILTERED_ACTIONS';
 export const LOADING_MORE_USERS_ACCOUNT_HISTORY = '@users/LOADING_MORE_USERS_ACCOUNT_HISTORY';
 
-export const x = createAction(OPEN_TRANSFER);
+export const openTransfer = createAction(OPEN_TRANSFER);
 export const closeTransfer = createAction(CLOSE_TRANSFER);
 
 export const openPowerUpOrDown = createAction(OPEN_POWER_UP_OR_DOWN);
